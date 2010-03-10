@@ -2851,7 +2851,7 @@ Raphael = (function () {
                 }
                 e.prev = time;
             }
-            R.svg && that && that.paper.safari();
+            R.svg && that && that.paper && that.paper.safari();
             animationElements[length] && setTimeout(animation);
         },
         upto255 = function (color) {
